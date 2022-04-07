@@ -1,23 +1,19 @@
 import MenuLateral from './MenuLateral'
 
-interface TituloProps {
-  titulo: string 
-  subtitulo: string 
+interface ConteudoProps {
+  
+  children?: any 
   
 }
-export default function Titulo(props: TituloProps) {
+export default function Conteudo(props: ConteudoProps) {
   return (
-    <div>
-      <h1 className={`
-        
+    
+      <div className={`
+        flex flex-col mt-7
       `}>        
-          {props.titulo}
-      </h1>
-      <h2 className={`
-        
-      `}>
-          {props.subtitulo}
-      </h2>
-    </div>
+          {props.children}
+      </div>
+      
+    
   )
 }
