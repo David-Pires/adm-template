@@ -1,10 +1,14 @@
+import { IconeCasa, IconeAjustes, IconeSino } from "../icons";
+import MenuItem from "./MenuItem";
 
 export default function MenuLateral() {
   return (
-    <div >
-     <aside>
-       <h1>Menu Lateral</h1>
-     </aside>
-    </div>
-  )
+    <aside>
+      <ul>
+        <MenuItem url="/" texto="Início" icone={IconeCasa} />
+        <MenuItem url="/ajustes" texto="Ajustes" icone={IconeAjustes} />
+        <MenuItem url="/notificacoes" texto="notificações" icone={IconeSino}/>
+      </ul>
+    </aside>
+  );
 }
