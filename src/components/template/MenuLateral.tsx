@@ -9,7 +9,7 @@ export default function MenuLateral() {
         flex
         flex-col
         items-center
-        justify-content
+        justify-center
         bg-gradient-to-r
         from-indigo-500
         to-purple-800
