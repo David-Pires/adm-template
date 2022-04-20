@@ -1,4 +1,4 @@
-import { IconeCasa, IconeAjustes, IconeSino, IconeLogout } from "../icons";
+import { IconeCasa, IconeAjustes, IconeSino, IconeLogout, IconeSair } from "../icons";
 import MenuItem from "./MenuItem";
 import Logo from "./Logo"
 
@@ -24,7 +24,7 @@ export default function MenuLateral() {
         <MenuItem url="/notificacoes" texto="notificações" icone={IconeSino}/>
       </ul>
       <ul className="">        
-        <MenuItem url="/notificacoes" texto="notificações" icone={IconeLogout}/>
+        <MenuItem url="/notificacoes" texto="sair" icone={IconeSair}/>
 
       </ul>
     </aside>
