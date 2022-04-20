@@ -14,7 +14,7 @@ export default function MenuLateral() {
         from-indigo-500
         to-purple-800
         h-20
-        w-20
+        w-19
       `}>
         <Logo />
       </div>
