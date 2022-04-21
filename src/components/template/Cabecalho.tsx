@@ -12,7 +12,7 @@ export default function Cabecalho(props: CabecalhoProps) {
       <Titulo titulo={props.titulo} 
               subtitulo={props.subtitulo}
       />
-      <h1>No earnings</h1>
+      
     </div>
   )
 }

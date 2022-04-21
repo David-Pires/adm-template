@@ -12,6 +12,7 @@ export default function Titulo(props: TituloProps) {
         font-black 
         text-3xl
         text-gray-900
+        dark:text-gray-100
       `}>        
           {props.titulo}
       </h1>
@@ -19,6 +20,8 @@ export default function Titulo(props: TituloProps) {
         font-light
         text-sm
         text-gray-600
+        dark:text-gray-300
+
 
       `}>
           {props.subtitulo}

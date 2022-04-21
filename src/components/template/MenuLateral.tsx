@@ -1,10 +1,17 @@
-import { IconeCasa, IconeAjustes, IconeSino, IconeLogout, IconeSair } from "../icons";
+import { IconeCasa, IconeAjustes, IconeSino,IconeSair } from "../icons";
 import MenuItem from "./MenuItem";
 import Logo from "./Logo"
 
 export default function MenuLateral() {
   return (
-    <aside className="flex flex-col">
+    <aside className="flex flex-col
+                      bg-gray-200
+                      text-gray-700  
+                      dark:bg-gray-900
+                      
+                      
+                      
+                      ">
       <div className={`        
         flex
         flex-col
@@ -29,8 +36,10 @@ export default function MenuLateral() {
           onClick={() => console.log('logout')}
           className={`
             text-red-600
+            dark:text-red-400
             hover:bg-red-400
             hover:text-white
+            dark:hover:text-white
           `}
         />
 
