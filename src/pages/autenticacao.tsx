@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import AuthInput from '../components/auth/Authinput';
+import AuthInput from '../components/auth/AuthInput';
 import { IconeAtencao } from '../components/icons';
 import useAuth from '../data/hook/useAuth';
 
