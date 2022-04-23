@@ -1,4 +1,5 @@
 Tailwind and typescript
+> Você pode baixar essa versão utilizando o comando npm i firebase@8.8.0ao invés do comando npm i firebase
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
