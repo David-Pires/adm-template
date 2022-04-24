@@ -6,7 +6,9 @@ import Cookies from 'js-cookie'
 
 interface AuthContextProps {
   usuario?: Usuario
-  loginGoogle: () => Promise<void>
+  loginGoogle?: () => Promise<void>
+  logout?: () => Promise<void>
+
 }
 const AuthContext = createContext<AuthContextProps> ({})
 
@@ -77,13 +79,17 @@ export  function AuthProvider(props) {
 
   }
   useEffect(() => {
-     const cancelar =  firebase.auth().onIdTokenChanged(configurarSessao)
-     return () => cancelar()
+     if(Cookies.get('admin-template-cod3r-auth')) {
+       const cancelar =  firebase.auth().onIdTokenChanged(configurarSessao)
+       return () => cancelar()
+      }
+
   }, [])
   return (
       <AuthContext.Provider value={{
         usuario,
-        loginGoogle
+        loginGoogle,
+        logout
       }}>
         {props.children}
       </AuthContext.Provider>
