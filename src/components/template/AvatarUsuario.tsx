@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import useAuth from '../../data/hook/useAuth'
+
 
 interface AvatarUsuarioProps {
   className?: string
